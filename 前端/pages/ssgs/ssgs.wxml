@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="input-container">
+    <input placeholder="请输入公司名称" bindinput="onInput" />
+  </view>
+  <button bindtap="onSearch">查询</button>
+  <view wx:if="{{companyInfo}}">
+    <view class="company-info">
+      <view class="info-item"><text>公司名称: {{companyInfo.CompanyName}}</text></view>
+      <view class="info-item"><text>股票代码: {{companyInfo.StockCode}}</text></view>
+      <view class="info-item"><text>股票名称: {{companyInfo.StockName}}</text></view>
+      <view class="info-item"><text>省市: {{companyInfo.ProvinceCity}}</text></view>
+      <view class="info-item"><text>上市日期: {{companyInfo.IpoDate}}</text></view>
+      <view class="info-item"><text>成立日期: {{companyInfo.FoundedDate}}</text></view>
+      <view class="info-item"><text>负责人: {{companyInfo.Person}}</text></view>
+      <view class="info-item"><text>注册资本: {{companyInfo.RegCap}}</text></view>
+      <view class="info-item"><text>员工数量: {{companyInfo.EmployeeNum}}</text></view>
+      <view class="info-item"><text>产品: {{companyInfo.Product}}</text></view>
+      <view class="info-item"><text>最终控制: {{companyInfo.FinalControl}}</text></view>
+      <view class="info-item"><text>注册地址: {{companyInfo.RegAdd}}</text></view>
+      <view class="info-item"><text>办公地址: {{companyInfo.OfficeAdd}}</text></view>
+      <view class="info-item"><text>行业: {{companyInfo.Industry}}</text></view>
+      <view class="info-item"><text>省: {{companyInfo.province}}</text></view>
+      <view class="info-item"><text>市: {{companyInfo.city}}</text></view>
+      <view class="info-item"><text>区: {{companyInfo.district}}</text></view>
+      <view class="info-item"><text>位置: {{companyInfo.location}}</text></view>
+    </view>
+  </view>
+</view>

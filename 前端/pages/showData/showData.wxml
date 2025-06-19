@@ -1,0 +1,5 @@
+<text style="font-size: 10px; color: red;">以下是数据库中前十个公司名称与员工数量柱状图</text>
+<view class="container">
+  
+  <canvas canvas-id="barCanvas" style="width: 100%; height: 500px;"></canvas>
+</view>

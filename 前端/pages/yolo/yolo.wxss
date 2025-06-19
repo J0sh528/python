@@ -1,0 +1,30 @@
+/* pages/index/index.wxss */
+.container {
+  padding: 20rpx;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+
+.image-container image {
+  width: 100%;
+  max-width: 300px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+
+.result-container {
+  margin-top: 20rpx;
+}
+
+.result-container image {
+  width: 100%;
+  max-width: 300px;
+}

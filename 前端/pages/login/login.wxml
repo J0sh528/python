@@ -1,0 +1,49 @@
+<!-- pages/login/login.wxml -->
+<view class="card">
+  <view class="doublecard {{loginanimation}}" wx:if="{{logincard}}">
+    <view class="titleView">
+      <view class="text-shadow-drop-right">Login</view>
+    </view>
+    <view class="inputViews">
+      <view class="inputView">
+        <label class="labeltext">账号</label>
+        <input placeholder="username" bindinput="getUsername" model:value="{{username}}" type="text"/>
+      </view>
+      <view class="inputView">
+        <label class="labeltext">密码</label>
+        <input placeholder="password" bindinput="getPassword" model:value="{{password}}" type="password"/>
+      </view>
+    </view>
+    <view class="btns">
+      <view class="functionbtn" bindtap="login">
+        <view>登录</view>
+      </view>
+      <view class="switchView">
+        <text class="switchcard" bindtap="switchCard">注册<text style="text-decoration: underline;">register</text></text>
+      </view>
+    </view>
+  </view>
+  <view class="doublecard {{registeranimation}}" wx:if="{{registercard}}">
+    <view class="titleView">
+      <view class="text-shadow-drop-right">Register</view>
+    </view>
+    <view class="inputViews">
+      <view class="inputView">
+        <label class="labeltext">新账号</label>
+        <input placeholder="username" bindinput="getNewName" model:value="{{newname}}" />
+      </view>
+      <view class="inputView">
+        <label class="labeltext">密码</label>
+        <input placeholder="password" bindinput="getNewPassword" model:value="{{newpassword}}" />
+      </view>
+    </view>
+    <view class="btns">
+      <view class="functionbtn" bindtap="register">
+        <view>注册</view>
+      </view>
+      <view class="switchView">
+        <text class="switchcard" bindtap="switchCard">登录<text style="text-decoration: underline;">login</text></text>
+      </view>
+    </view>
+  </view>
+</view>

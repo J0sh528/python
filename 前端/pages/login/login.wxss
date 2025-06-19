@@ -1,0 +1,208 @@
+/* pages/login/login.wxss */
+page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  overflow: hidden;
+  width: 80%;
+  height: 70%;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+    -15px -15px 30px #ffffff;
+}
+
+.doublecard {
+  width: 100%;
+  height: 100%;
+}
+
+.titleView {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(83, 83, 83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin: 0 auto;
+  width: 100%;
+  height: 30%;
+}
+
+.text-shadow-drop-right {
+  -webkit-animation: text-shadow-drop-right 0.6s both;
+  animation: text-shadow-drop-right 0.6s both;
+}
+
+@-webkit-keyframes text-shadow-drop-right {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    text-shadow: 6px 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes text-shadow-drop-right {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    text-shadow: 6px 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.inputViews {
+  overflow: hidden;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  background-color: #69c3aa;
+}
+
+.inputView {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: #808080 2px solid;
+  border-radius: 15rpx;
+  width: 90%;
+  height: 35%;
+}
+
+.labeltext {
+  color: rgb(83, 83, 83);
+  position: absolute;
+  top: -25%;
+  left: 8%;
+  padding-left: 3%;
+  padding-right: 3%;
+  height: 50px;
+  background-color: #69c3aa;
+}
+
+input {
+  border-bottom: rgb(83, 83, 83) 1rpx solid;
+  position: absolute;
+  top: 14%;
+  left: 3%;
+  height: 75%;
+  width: 94%;
+}
+
+.btns {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.functionbtn {
+  color: #90ee90;
+  font-size: 45rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25rpx;
+  width: 75%;
+  height: 40%;
+  background-color: rgb(83, 83, 83);
+}
+
+.switchView {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 30%;
+}
+
+.switchcard {
+  font-family: sans-serif;
+  color: rgb(59, 59, 230);
+  position: absolute;
+  top: -2%;
+}
+
+.fade-out-bck {
+  -webkit-animation: fade-out-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: fade-out-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  z-index: -10;
+}
+
+@-webkit-keyframes fade-out-bck {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out-bck {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+}
+
+.fade-in-bck {
+  -webkit-animation: fade-in-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: fade-in-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+
+}

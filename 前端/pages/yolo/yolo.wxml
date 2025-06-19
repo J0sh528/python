@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="image-container">
+    <image src="{{imageUrl}}" mode="widthFix" />
+  </view>
+  <view class="button-container">
+    <button bindtap="chooseImage">Choose Image</button>
+  </view>
+  <view class="button-container">
+    <button bindtap="showResultImage" wx:if="{{resultImageUrl}}">Show Result Image</button>
+  </view>
+  <view class="result-container" wx:if="{{showResultImage}}">
+    <image src="{{resultImageUrl}}" mode="widthFix" />
+    <view class="detection-list">
+      <view wx:for="{{detections}}" wx:key="index">
+        <text>物品：{{item.label}}
+          置信度：{{item.confidence}}</text>
+      </view>
+    </view>
+  </view>
+</view>

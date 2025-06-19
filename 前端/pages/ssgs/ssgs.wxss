@@ -1,0 +1,24 @@
+button {
+  width: 90%;
+  padding: 10px;
+  background-color: #007AFF;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.company-info {
+  width: 90%;
+}
+
+.info-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.info-item text {
+  display: block;
+  padding: 5px 0;
+}
